@@ -15,8 +15,8 @@ text = text.split("\n")
 pocet = 0
 for i in text:
     if prikaz[0] in i:
-        if len(prikaz) == 2:
+        if len(prikaz) == 2 or (len(prikaz) > 2 and prikaz[2] != "-c"):
             print(i)
         pocet += 1 
-if len(prikaz) == 3 and prikaz[-1] == "-c":
+if (len(prikaz) == 3 and prikaz[-1] == "-c") or (len(prikaz) > 3 and prikaz[2] == "-c"):
     print(pocet)
