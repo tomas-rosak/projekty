@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+
 import sys
 
 prikaz = sys.argv[1:]
+
 if len(prikaz) < 2:
     print("Malo argumentu")
     exit(1)
